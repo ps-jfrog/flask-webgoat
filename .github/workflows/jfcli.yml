@@ -75,6 +75,6 @@ jobs:
           run: |
             jf rt bce ${{env.BUILD_NAME}} ${{env.BUILD_ID}} 
             jf rt bag ${{env.BUILD_NAME}} ${{env.BUILD_ID}}  
-            jf rt bad ${{env.BUILD_NAME}} ${{env.BUILD_ID}} --module="${{env.MODULE_NAME}}" "${BAD_DEPS_DIR}/*"
+            # jf rt bad ${{env.BUILD_NAME}} ${{env.BUILD_ID}} --module="${{env.MODULE_NAME}}" "${BAD_DEPS_DIR}/*"
             jf rt bp ${{env.BUILD_NAME}} ${{env.BUILD_ID}} --detailed-summary=true 
       
